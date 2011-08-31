@@ -1,0 +1,7 @@
+# ignore eclipse dot files
+.project
+.pydevproject
+.metadata
+# Ignore compiled python files.
+*.pyc
+
