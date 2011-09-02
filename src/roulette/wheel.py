@@ -11,7 +11,7 @@ class Wheel(object):
     '''
 
     def __init__(self, rng):
-        self.rng - rng
+        self.rng = rng
         self.bins = tuple(Bin() for i in range(38))
         
     def add_outcome(self, number, outcome):
@@ -22,5 +22,7 @@ class Wheel(object):
     
     def get(self, bin):
         return self.bins[bin]
-
+    
+    def __str__(self):
+        return ', '.join(map(str, self.bins))
         
